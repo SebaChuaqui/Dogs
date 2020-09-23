@@ -8,7 +8,7 @@ import retrofit2.http.Path
 interface ApiBavaus {
 
     @GET("breeds/list")
-    fun getDataFromBavaus() : Call<List<BreedListBavau>>
+    fun getDataFromBavaus() : Call<BreedListBavau>
 
 
     @GET("breed/{razas}/images")
