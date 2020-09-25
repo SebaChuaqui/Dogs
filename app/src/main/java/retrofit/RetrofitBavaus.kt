@@ -1,4 +1,4 @@
-package com.example.bavaus.model
+package retrofit
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
