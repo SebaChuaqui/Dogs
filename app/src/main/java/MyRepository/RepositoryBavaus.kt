@@ -2,8 +2,8 @@ package MyRepository
 
 import DataBase.BavausDao
 import DataBase.BavausImagesDao
-import DataBase.BreedListBavau
-import DataBase.ImagesBreedBavau
+import retrofit.BreedListBavau
+import retrofit.ImagesBreedBavau
 import android.util.Log
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -56,7 +56,7 @@ class RepositoryBavaus (private val mBavausDao: BavausDao, private val mBavausIm
                     in 200..299 -> CoroutineScope(Dispatchers.IO).launch {
                         response.body()?.let {
                             mBavausImagesDao.insertAllBavausImages(bavausImages(mRazas,it.message))
-
+                            Log.d("Repository =","$mRazas")
                         }
 
                     }

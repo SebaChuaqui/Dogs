@@ -1,8 +1,8 @@
-package com.example.bavaus.model.BavausViewModel
+package MyViewModel
 
 import DataBase.BavausDataBase
-import DataBase.BreedListBavau
-import DataBase.ImagesBreedBavau
+import retrofit.BreedListBavau
+import retrofit.ImagesBreedBavau
 import MyRepository.RepositoryBavaus
 import android.app.Application
 import android.util.Log

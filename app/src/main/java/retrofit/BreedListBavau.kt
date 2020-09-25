@@ -1,4 +1,4 @@
-package DataBase
+package retrofit
 
 
 import androidx.room.Entity
