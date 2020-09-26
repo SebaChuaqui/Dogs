@@ -9,7 +9,7 @@ import com.bumptech.glide.Glide
 import com.example.bavaus.R
 import model.DataImagesBavausDBList
 
-class ImagesAdapter(): RecyclerView.Adapter<ImagesAdapter.TaskViewHolder>() {
+class ImagesAdapter(val mPassData: ImagesBavaus): RecyclerView.Adapter<ImagesAdapter.TaskViewHolder>() {
 
     private var dataList = emptyList<DataImagesBavausDBList>()
 
@@ -23,7 +23,7 @@ class ImagesAdapter(): RecyclerView.Adapter<ImagesAdapter.TaskViewHolder>() {
         val itemView = itemView.setOnClickListener(this)
 
         override fun onClick(p0: View?) {
-            // mPassData.passData(dataList[adapterPosition])
+            mPassData.passBavaus(dataList[adapterPosition])
         }
 
     }
