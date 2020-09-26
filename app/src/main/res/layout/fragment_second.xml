@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/BluemWhite">
+    tools:context="ui.SecondFragment">
 
     <TextView
         android:id="@+id/tv_bavaus"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_bavaus" />
 
     <Button
-        android:id="@+id/bt_home"
+        android:id="@+id/button_second"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
@@ -43,5 +43,4 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
